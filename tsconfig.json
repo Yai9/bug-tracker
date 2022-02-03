@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "DOM"
+    ],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "target": "es2019",
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "$lib": [
+        "src/lib"
+      ],
+      "$lib/*": [
+        "src/lib/*"
+      ]
+    },
+    "types": [
+      "jest"
+    ],
+    "strict": false,
+    "noEmit": true,
+    "jsx": "preserve"
+  },
+ 
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.jsx",
+    "src/UI/**/*.module.css",
+    "src/pages/*.jsx",
+    "src/pages/index.tsx"
+, "src/UI/BugReportForm/index.tsx", "src/UI/Sidebar/index.tsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

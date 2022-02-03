@@ -1,0 +1,44 @@
+.issueBoardWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.issueBoard {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background:  rgba(0,0,0,.5);
+    right: 0;
+    height: 80%;
+    width: 300px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    
+}
+
+.issueBoardTitle {
+  font-size: 24px;
+  color: #03e9f4;
+  border: 1px solid #03e9f4;
+  padding: 9px;
+  margin-top: 10px;
+}
+
+
+.issueBoard::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  .issueBoard::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .issueBoard::-webkit-scrollbar-thumb {
+    background-color: #03e9f4;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #03e9f4;  /* creates padding around scroll thumb */
+  }
+  

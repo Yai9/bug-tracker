@@ -1,12 +1,10 @@
-@import '@fontsource/fira-mono';
-
 @tailwind base;
 
 :root {
     font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --font-mono: 'Fira Mono', monospace;
-    --primary-color: #fafafa
+    --font-mono: 'Arial';
+    --primary-color: #fafafa;
     --pure-white: #fafafa;
     --secondary-color: #fafafa;
     --tertiary-color: #fafafa;
@@ -17,39 +15,32 @@
     --column-margin-top: 4rem;
 }
 
+html {
+    min-height: 100vh;
+  }
+  
+
 body {
+    margin:0;
+    padding:0;
     min-height: 100vh;
-    margin: 0;
-    background-color: #fafafa; 
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    overflow-x: hidden;
 }
 
-body::before {
-    content: '';
-    width: 80vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 10vw;
-    z-index: -1;
-    background: #fafafa;
-    opacity: 0.05;
-}
-
-#svelte {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
 h1{
 	font-weight: 400;
 	font-size:22px;
-    	color: var(--heading-color);
+    color: var(--heading-color);
 }
-h2{     font-weight: 400;
+h2{ 
+    font-weight: 400;
 	font-size:20px;
 	color: var(--heading-color);
 }
+
 p {
     font-weight: 400;
     color: var(--heading-color);
@@ -81,7 +72,6 @@ h3 {
 
 
 pre {
-    font-size: 16px;
     font-family: var(--font-mono);
     background-color: rgba(255, 255, 255, 0.45);
     border-radius: 3px;
@@ -91,8 +81,6 @@ pre {
     color: var(--text-color);
 }
 
-input{
-}
 button {
     font-size: inherit;
     font-family: inherit;
@@ -106,6 +94,41 @@ button:focus:not(:focus-visible) {
     h1 {
         font-size: 2.4rem;
     }
+}
+
+.app {
+   display: grid;
+   grid-row: 4;
+   width: 100%;
+   height: 100%;
+   
+}
+
+.sidebarClosed {
+    margin-top: 115px;
+    transform: translateX(-300px);
+    transition: ease-out 0.5s; 
+}
+.sidebarOpened {
+   margin-top: 115px;
+    transform: translateX(0);
+    transition: ease-in 0.5s; 
+
+}
+
+.issueContainer {
+   height: 100%;
+   position: fixed;
+   right: 0;
+}
+
+.issueBoardClosed{
+    transform: translateX(1400px);
+    transition: ease-in 0.5s; 
+}
+.issueBoardOpened{
+    transform: translateX(0);
+    transition: ease-in 0.5s; 
 }
 
 @tailwind components;
