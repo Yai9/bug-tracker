@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from '../../UI/Sidebar/index'
 import BugReportForm from '../../UI/BugReportForm/index'
 
 
