@@ -13,6 +13,7 @@ const IssueItem: React.FC<{ title: String, severity: String }> = ({ title, sever
                     <span>Severity: </span>
                     <p>{' ' + severity}</p>
                     </div>
+                    <button className="mt-12">Add to TaskBoard</button>
                 </div>
             </div>
         </div>
