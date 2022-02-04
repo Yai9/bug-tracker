@@ -31,3 +31,26 @@
     width: 90%;
 
 }
+
+.issueData button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #03e9f4;
+    border: 1px solid #03e9f4;
+    padding: 9px;
+    margin-top: 25px;
+    max-width: fit-content;
+    
+}
+
+.issueData button:hover {
+    background-color: #03e9f4;
+    color: white;
+    transition: ease-in 0.3s;
+}
+
+.issueData button:active {
+    background-color: #0da1ac;
+    color: white;
+}
