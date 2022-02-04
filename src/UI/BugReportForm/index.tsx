@@ -100,7 +100,7 @@ const BugReportForm: React.FC = () => {
                         <h3>Medium</h3>
                         <h3>High</h3>
                     </div>
-                    <input id="severity" name="severity" ref={severityRef} type="range" min="0" max="3" defaultValue="1" onChange={rangeChangeHandler} onBlur={()=> setConditions(true)} />
+                    <input id="severity" name="severity" ref={severityRef} className={styles.severity} type="range" min="0" max="3" defaultValue="1" onChange={rangeChangeHandler} onBlur={()=> setConditions(true)}/>
                     <label>Severity</label>
                     {
                         reportInput.severity === 'Not provided' &&
