@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import type { Report } from '../../types/Report/Report';
+import type { Report } from '../../types/Report';
 import { validator } from '../../hooks/validator'
 import axios from 'axios';
 
@@ -82,19 +82,19 @@ const BugReportForm: React.FC = () => {
     }
 
     return (
-        <div className={styles.loginBoxWrapper}>
-        <div className={styles.loginBox}>
+        <div className={styles.bugReportBoxWrapper}>
+        <div className={styles.bugReportBox}>
             <h2>Add Bug Report</h2>
             <form method='post'>
-                <div className={styles.userBox}>
+                <div className={styles.dataBox}>
                     <input id="title" name="title" type="text" onChange={titleChangeHandler} onBlur={()=> setConditions(true)} />
                     <label>Title</label>
                 </div>
-                <div className={styles.userBox}>
+                <div className={styles.dataBox}>
                     <textarea id="description" name="description" onChange={descriptionChangeHandler} onBlur={()=> setConditions(true)} />
                     <label>Description</label>
                 </div>
-                <div className={styles.userBox}>
+                <div className={styles.dataBox}>
                     <div className="grid grid-cols-3 gap-1 w-full text-right text-white">
                         <h3>Low</h3>
                         <h3>Medium</h3>

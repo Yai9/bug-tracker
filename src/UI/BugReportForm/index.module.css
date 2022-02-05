@@ -1,8 +1,8 @@
-  .loginBoxWrapper {
+  .bugReportBoxWrapper {
     width: 100%;
   }
   
-  .loginBox {
+  .bugReportBox {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,18 +15,18 @@
     border-radius: 10px;
   }
   
-  .loginBox h2 {
+  .bugReportBox h2 {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
     text-align: center;
   }
   
-  .loginBox .userBox {
+  .bugReportBox .dataBox {
     position: relative;
   }
   
-  .loginBox .userBox input {
+  .bugReportBox .dataBox input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -37,7 +37,7 @@
     outline: none;
     background: transparent;
   }
-  .loginBox .userBox textarea {
+  .bugReportBox .dataBox textarea {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -48,7 +48,7 @@
     outline: none;
     background: transparent;
   }
-  .loginBox .userBox label {
+  .bugReportBox .dataBox label {
     position: absolute;
     top:0;
     left: 0;
@@ -59,10 +59,10 @@
     transition: .5s;
   }
   
-  .loginBox .userBox input:focus ~ label,
-  .loginBox .userBox input:valid ~ label,
-  .loginBox .userBox textarea:focus ~ label,
-  .loginBox .userBox textarea:valid ~ label
+  .bugReportBox .dataBox input:focus ~ label,
+  .bugReportBox .dataBox input:valid ~ label,
+  .bugReportBox .dataBox textarea:focus ~ label,
+  .bugReportBox .dataBox textarea:valid ~ label
    {
     top: -20px;
     left: 0;
@@ -70,7 +70,7 @@
     font-size: 12px;
   }
   
-  .loginBox form a {
+  .bugReportBox form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -85,7 +85,7 @@
     cursor: pointer;
   }
   
-  .loginBox a:hover {
+  .bugReportBox a:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
@@ -95,12 +95,12 @@
                 0 0 100px #03e9f4;
   }
   
-  .loginBox a span {
+  .bugReportBox a span {
     position: absolute;
     display: block;
   }
   
-  .loginBox a span:nth-child(1) {
+  .bugReportBox a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -118,7 +118,7 @@
     }
   }
   
-  .loginBox a span:nth-child(2) {
+  .bugReportBox a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -137,7 +137,7 @@
     }
   }
   
-  .loginBox a span:nth-child(3) {
+  .bugReportBox a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -156,7 +156,7 @@
     }
   }
   
-  .loginBox a span:nth-child(4) {
+  .bugReportBox a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
